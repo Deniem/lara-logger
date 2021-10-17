@@ -1,0 +1,10 @@
+{
+    "name": "deniem/lara-logger",
+    "description": "Lara Logger Sample",
+    "type": "library",
+    "require": {
+        "monolog/monolog": "2.x-dev"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev"
+}
