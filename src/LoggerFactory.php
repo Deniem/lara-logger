@@ -2,7 +2,6 @@
 
 namespace Deniem\LaraLogger;
 
-use Deniem\LaraLogger\Models\MappedLoggerConfig;
 use Monolog\Logger;
 use ReflectionException;
 

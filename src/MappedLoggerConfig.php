@@ -1,6 +1,6 @@
 <?php
 
-namespace Deniem\LaraLogger\Models;
+namespace Deniem\LaraLogger;
 
 use Deniem\LaraLogger\Factory\MapperFactory;
 use Monolog\Handler\AbstractProcessingHandler;
