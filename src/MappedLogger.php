@@ -115,7 +115,7 @@ class MappedLogger implements LoggerInterface
     {
         $contextTargetEvent = $context['targetEvent'] ?? null;
 
-        if (!empty($contextTargetEvent) && !is_null($mapper = $this->mappers[$contextTargetEvent])) {
+        if (!empty($contextTargetEvent) && !is_null($mapper = $this->mappers[$contextTargetEvent] ?? null)) {
             $context = $mapper->map($context);
         }
 

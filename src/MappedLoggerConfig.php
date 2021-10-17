@@ -52,8 +52,8 @@ class MappedLoggerConfig
         $handler = null;
         $mappers = array_map(fn($config) => $mappersFactory->make($config), $config['mappers'] ?? []);
         $channel = $config['channel'] ?? null;
-        $driver = $config['driver'] ?? null;
-        $level = $config['level'] ?? null;
+        $driver = $config['driver'] ?? self::DEFAULT_DRIVER;
+        $level = $config['level'] ?? self::DEFAULT_LEVEL;
 
         if (empty($config)) {
             throw new RuntimeException(__CLASS__ . ' config cannot be empty!');
