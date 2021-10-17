@@ -3,8 +3,12 @@
     "description": "Lara Logger Sample",
     "type": "library",
     "require": {
-        "monolog/monolog": "2.x-dev"
+        "php": ">=7.2",
+        "monolog/monolog": "2.3.*"
     },
     "license": "MIT",
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {"deniem\\lara-logger\\": "src/"}
+    }
 }
