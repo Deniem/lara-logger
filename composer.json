@@ -9,6 +9,6 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": {"deniem\\lara-logger\\": "src/"}
+        "psr-4": {"Deniem\\LaraLogger\\": "src/"}
     }
 }
