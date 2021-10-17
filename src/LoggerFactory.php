@@ -18,7 +18,7 @@ class LoggerFactory
     public function __invoke(array $config)
     {
         $loggerConfig = MappedLoggerConfig::configure($config);
-        $logger = new Logger($loggerConfig->getChannel(), (array)$loggerConfig->getHandler());
+        $logger = new Logger($loggerConfig->getChannel(), [$loggerConfig->getHandler()]);
 
         return new MappedLogger($logger, $loggerConfig->getMappers());
     }
